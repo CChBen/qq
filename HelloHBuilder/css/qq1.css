@@ -56,7 +56,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgb(240, 238, 238);
+	background-color: rgb(242, 242, 242);
 }
 
 #title {
@@ -104,29 +104,29 @@ body {
 
 #title div:nth-child(6) {
 	background-size: 100% 100%;
-	background-image: url(../img/more.PNG);
+	background-image: url(../img/email.png);
 }
 
 #title div:nth-child(6):hover {
-	background-image: url(../img/more_hover.png);
+	background-image: url(../img/email_hover.png);
 }
 
 #title div:nth-child(7) {
 	background-size: 100% 100%;
-	background-image: url(../img/more.PNG);
+	background-image: url(../img/kongjian.PNG);
 }
 
 #title div:nth-child(7):hover {
-	background-image: url(../img/more_hover.png);
+	background-image: url(../img/kongjian_hover.png);
 }
 
 #title div:nth-child(8) {
 	background-size: 100% 100%;
-	background-image: url(../img/more.PNG);
+	background-image: url(../img/zhuangban.png);
 }
 
 #title div:nth-child(8):hover {
-	background-image: url(../img/more_hover.png);
+	background-image: url(../img/zhuangban_hover.png);
 }
 
 #title div:nth-child(9) {
@@ -196,7 +196,10 @@ body {
 	background-color: rgb(238, 236, 235);
 }
 
-#signature{
+#signature input{
+	border: 0.5px solid rgb(242, 242, 242);
+	outline: none;
+	background-color: rgb(242, 242, 242);
 	font: bolder;
 }
 
@@ -212,7 +215,7 @@ body {
 
 #search {
 	height: 20px;
-	background-color: #CCCCCC;
+	background-color: rgb(224, 224, 224);
 }
 
 #search img:nth-child(1) {
@@ -232,7 +235,7 @@ body {
 	height: 18px;
 	float: left;
 	outline: none;
-	background-color: #CCCCCC;
+	background-color: rgb(224, 224, 224);
 }
 
 #contact {
@@ -315,7 +318,7 @@ body {
 }
 
 #divlist :hover{
-	background-color: whitesmoke;
+	background-color: rgb(240,240,240);
 }
 
 #list1 {

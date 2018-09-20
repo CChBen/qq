@@ -100,3 +100,9 @@ $("#zaixian").hover(function() {
 }, function() {
 	$("#zaixianImg").attr('src', "img/zaixian.png");
 });
+
+$("#divlist").hover(function() {
+	$("#youjiantou").attr('src', "img/youjiantou_hover.png");
+}, function() {
+	$("#youjiantou").attr('src', "img/youjiantou.png");
+});
