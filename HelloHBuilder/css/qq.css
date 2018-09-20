@@ -1,0 +1,243 @@
+/*所有元素设置margin padding border 0，需要设置的位置重新设置*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+/*img 的以及值域块的边框*/
+
+fieldset,
+img {
+	border: 0;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.touxiang {
+	height: 150px;
+}
+
+.title {
+	margin: 15px;
+	text-align: center;
+	height: 44px;
+	line-height: 44px;
+	position: relative;
+	color: black;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+.level {
+	margin: 15px;
+	color: #FF8C00;
+	font-weight: bolder;
+	font-size: 28px;
+}
+
+.level:hover {
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	background: whitesmoke;
+	cursor: default;
+}
+
+.vip {
+	margin: 15px;
+	color: white;
+	background: grey;
+	font-weight: bolder;
+	font-size: 28px;
+}
+
+.vip:hover {
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	cursor: default;
+}
+
+.edit {
+	margin: 15px;
+	color: black;
+	font-size: 28px;
+}
+
+.edit:hover {
+	border: 1px solid #CCC;
+	cursor: default;
+}
+
+.search {
+	text-align: left;
+	height: 44px;
+	line-height: 44px;
+	position: relative;
+	color: whitesmoke;
+	font-size: 35px;
+}
+
+.div-search {
+	height: 60px;
+	padding: 5px;
+	background: gray;
+	filter: alpha(Opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6
+}
+
+.tab {
+	text-align: center;
+	width: 300px;
+	line-height: 44px;
+	position: relative;
+	color: gray;
+	font-size: 50px;
+	top: 10px;
+}
+
+.tab :hover {
+	color: black;
+}
+
+.haoyou {
+	margin: 15px;
+	text-align: center;
+	width: 250px;
+	line-height: 44px;
+	position: relative;
+	color: gray;
+	font-size: 44px;
+	background: whitesmoke;
+}
+
+.haoyou :hover {
+	color: black;
+}
+
+.div1 a:hover img {
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8
+}
+
+.tuichu :hover{
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	background: red;
+}
+
+ul,
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+#list {
+	margin: 10px;
+}
+
+#list .lis {
+	margin: 10px;
+}
+
+#list h2 {
+	height: 60px;
+	font-size: 50px;
+	line-height: 30px;
+	text-indent: 20px;
+	/*文字缩进20px*/
+	cursor: pointer;
+}
+
+#list ul {
+	display: none;
+}
+
+#list ul li:hover{
+	background: whitesmoke;
+}
+
+#list ul li {
+	line-height: 24px;
+	text-indent: 24px;
+	/*文字缩进24px*/
+}
+
+#list li span{
+	margin: 10px;
+	font-size: 40px;
+}
+
+#qianming{
+	font-size: 30px;
+	color: darkgray;
+}
+
+.dongtaiImg{
+	width: 475px;
+	border: 1px solid #CCC;
+}
+
+.dongtaiImg:hover {
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	background: gray;
+	cursor: pointer;
+}
+
+.xiaoxiImg{
+	width: 960px;
+	height: 200px;
+}

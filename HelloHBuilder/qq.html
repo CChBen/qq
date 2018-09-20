@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ</title>
+		<link rel="stylesheet" href="css/qq.css" />
+	</head>
+	<!--url(img/weixin.jpg)-->
+
+	<body>
+		<div style="height: 1500px;" position:relative>
+			<div style="background: white;height: 340px;position:relative">
+				<div class="div1" style="position: relative;">
+					<span>
+					<img  src="img/logo.PNG" style="height: 80px;"/>
+				</span>
+					<a>
+						<img id="tuichu" class="fr tuichu" title="关闭" src="img/tuichu.PNG" style="height: 80px;" />
+					</a>
+					<a>
+						<img id="suoxiao" class="fr" title="最小化" src="img/suoxiao.PNG" style="height: 80px;" />
+					</a>
+					<a>
+						<img id="more" class="fr" src="img/more.PNG" style="height: 80px;" />
+					</a>
+					<a>
+						<img id="qqvip" class="fr" title="QQ会员" src="img/zone.png" style="height: 80px;" />
+					</a>
+					<a>
+						<img id="mail" class="fr" title="QQ邮箱" src="img/zone.png" style="height: 80px;" />
+					</a>
+					<a>
+						<img id="zone" class="fr" title="QQ空间" src="img/zone.png" style="height: 80px;" />
+					</a>
+					<a>
+						<img id="zhuangban" class="fr" title="个性装扮" src="img/zone.png" style="height: 80px;" />
+					</a>
+					<div style="height: 120px;width: 400px;position:absolute;left: 230px;top: 150px">
+						<span class="title">
+						Tschüss
+					</span>
+						<a class="level">
+							LV66
+						</a>
+						<a class="vip">
+							VIP
+						</a>
+						<a>
+							<input class="edit" id="edit" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value='编辑个性签名';" type="text" value="编辑个性签名" />
+						</a>
+					</div>
+					<div style="height: 120px;width: 300px;position:absolute;right: 50px;top: 150px">
+						<span class="title">
+						<img class="fr" src="img/weather.PNG" style="width: 120px; height: 100px;" />
+					</span>
+					</div>
+					<div id="touxiang" style="height: 200px;width: 200px;position:relative">
+						<a>
+							<img style="border-radius:70%; height: 150px;width: 150px;margin-top: 30px;margin-left: 40px;" class="mui-icon-image touxiang" src="img/weixin.jpg" />
+						</a>
+					</div>
+				</div>
+				<div class="div-search" style="height: 46px;">
+					<span>
+					<img src="img/search.PNG" height="40px" style="margin-top: 4px;margin-left: 20px;"/>
+				</span>
+					<input class="search" style="width: 850px;border:0px;background:none;margin-left: 10px;" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value='搜索';" type="text" value="搜索" />
+					<a>
+						<img id="cancel" src="img/cancel.png" style="height: 35px;display: none;"/>
+					</a>
+				</div>
+			</div>
+			<div id="sousuolang" style="background:white;height: 1230px;width: 980px;position:absolute;top:343px;display: none;">
+				<img src="img/sousuolan.png" style="width: 980px;" />
+			</div>
+
+			<div id="lxd" style="height: 80px;">
+				<div class="fl tab">
+					<span id="lianxiren" style="width: 300px;">联系人</span>
+				</div>
+				<div class="fr tab">
+					<span id="xiaoxi" style="width: 300px;">消息</span>
+				</div>
+				<div class="fr tab">
+					<span id="dongtai" style="width: 300px;">动态</span>
+				</div>
+			</div>
+			<div id="haoyouqunliao" style="height: 80px;">
+				<div class="fl haoyou">
+					<span id="haoyou">好友</span>
+				</div>
+				<div class="fl haoyou">
+					<span id="qunliao">群聊</span>
+				</div>
+				<div class="fr">
+					<span id="jia">
+					<img src="img/jia.PNG" style="width: 100px;">
+				</span>
+				</div>
+			</div>
+			<div style="height: 1230px;">
+				<ul id="list">
+					<!--<li class="lis">
+					<h2>我的设备 1/2</h2>
+					<ul>
+						<li><img src="img/weixin.jpg" width="50px" class="mui-icon-image" style="border-radius:70%"><span>张三</span> <span id="qianming">个性签名</span></li></img>
+						<li><img src="img/weixin.jpg" width="50px" class="mui-icon-image" style="border-radius:70%"><span>张三</span> </li></img>
+					</ul>
+				</li>
+				<li class="lis">
+					<h2>企业好友</h2>
+					<ul>
+						<li><img src="img/weixin.jpg" width="50px" class="mui-icon-image" style="border-radius:70%"><span>张三</span> </li></img>
+						<li><img src="img/weixin.jpg" width="50px" class="mui-icon-image" style="border-radius:70%"><span>张三</span> </li></img>
+					</ul>
+				</li>
+				<li class="lis">
+					<h2>黑名单</h2>
+					<ul>
+						<li><img src="img/weixin.jpg" width="50px" class="mui-icon-image" style="border-radius:70%"><span>张三</span> </li></img>
+					</ul>
+				</li>-->
+					<!--<tr>
+					<td>
+						<img src="img/kongjian.PNG" class="dongtaiImg"/>
+					</td>
+					<td>
+						<img src="img/zhibo.PNG" class="dongtaiImg"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/kongjian.PNG" class="dongtaiImg"/>
+					</td>
+					<td>
+						<img src="img/zhibo.PNG" class="dongtaiImg"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/txketang.PNG" class="dongtaiImg"/>
+					</td>
+				</tr>-->
+					<!--<tr>
+					<img src="img/xiaoxi1.PNG" class="xiaoxiImg"/>
+				</tr>
+				<tr>
+					<img src="img/xiaoxi2.PNG" class="xiaoxiImg"/>
+				</tr>-->
+				</ul>
+			</div>
+			<div style="height: 60px;">
+				<a>
+					<img class="fl" src="img/shezhi.PNG" style="height: 60px;" />
+				</a>
+				<div id="" style="float: right;">
+					<a>
+						<img class="fr" src="img/yingyong.PNG" style="height: 60px;" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.1.11.1.min.js"></script>
+		<script src="js/qq.js"></script>
+	</body>
+
+</html>
