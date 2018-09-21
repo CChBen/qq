@@ -33,7 +33,7 @@
 				<div id="userinfo" class="info">
 					<span>Tschüss</span>
 					<div id="signature">
-						<input value="编辑个性签名">
+						<input value="编辑个性签名" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value='编辑个性签名';">
 					</div>
 				</div>
 				<div id="weather" class="info">
@@ -41,9 +41,11 @@
 				</div>
 			</div>
 			<div id="search">
-				<img src="img/search.png">
-				<input placeholder="搜索">
-				<img id="cancle" src="img/cancle.png">
+				<img id="searchImg" src="img/search.png">
+				<div class="search">
+					<input id="search_input" value="搜索" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value='搜索';">
+				</div>
+				<img id="cancel" src="img/cancel.png">
 			</div>
 			<div id="contact">
 				<div id="lable">
@@ -52,41 +54,36 @@
 					<div id="message" class="lable" title="消息">消息</div>
 				</div>
 				<div style="position: relative;">
-					<div id="page1">
+					<div id="page">
 						<div id="people_info" class="contact">
 							<div id="people_info_type">
-								<div id="friends" title="好友"></div>
-								<div id="friends" title="群聊"></div>
-								<div id="addFriends" title="加好友"></div>
+								<div id="friends" title="好友"><span>好友</span><img id="haoyoujiantou" src="img/haoyouxiajiantou.png" /></div>
+								<div id="qunliao" title="群聊"><span>群聊</span><img id="qunliaojiantou" src="img/haoyouxiajiantou.png" /></div>
+								<div id="addFriends" title="加好友"><span>|</span><img id="jiahao" src="img/jia.PNG" /></div>
 							</div>
-
 						</div>
 						<div id="friendsList" class="contact">
 							<ul>
 								<li>
-									<div id="divlist">
-										<a>
-											<img id="youjiantou" src="img/youjiantou.png" />
-											<span id="span1">&nbsp;&nbsp;&nbsp;我的设备 1/2</span>
-										</a>
+									<div id="divlist1">
+										<div>
+											<img id="youjiantou1" src="img/youjiantou.png" />
+											<span id="span1">我的设备 1/2</span>
+										</div>
 									</div>
-									<ul>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul id="ulList1">
 										<li></li>
 										<li></li>
 									</ul>
 								</li>
 								<li>
-									<div id="divlist">
-										<a>
-											<img id="youjiantou" src="img/youjiantou.png" />
-											<span id="span2">&nbsp;&nbsp;&nbsp;我的好友 3/10</span>
-										</a>
+									<div id="divlist2">
+										<div>
+											<img id="youjiantou2" src="img/youjiantou.png" />
+											<span id="span2">我的好友 3/6</span>
+										</div>
 									</div>
-									<ul>
+									<ul id="ulList2">
 										<li></li>
 										<li></li>
 										<li></li>
@@ -96,6 +93,12 @@
 									</ul>
 								</li>
 							</ul>
+						</div>
+						<div id="jiaqun">
+							<div id="jiaqunImg">
+
+							</div>
+
 						</div>
 					</div>
 
@@ -107,7 +110,7 @@
 						<div class="dynamic_info"></div>
 					</div>
 					<div id="message_info" class="contact">
-						<ul>
+						<ul id="historyList">
 							<li></li>
 							<li></li>
 							<li></li>
@@ -156,38 +159,72 @@
 		<div id="statelist">
 			<ul>
 				<li id="zaixian"><img id="zaixianImg" src="img/zaixian.png" /><span>我在线上</span></li>
-				<li>Q我吧</li>
+				<li id="Q"><img id="QImg" src="img/Q.png" /><span>Q我吧</span></li>
 			</ul>
 			<div class="br"></div>
 			<ul>
-				<li>离开</li>
-				<li>忙碌</li>
-				<li>请勿打扰</li>
+				<li id="likai"><img id="likaiImg" src="img/likai.png" /><span>离开</span></li>
+				<li><span style="margin-left: 22px;">忙碌</span></li>
+				<li><span style="margin-left: 22px;">请勿打扰</span></li>
 			</ul>
 			<div class="br"></div>
 			<ul>
-				<li>隐身</li>
-				<li>离线</li>
+				<li><span style="margin-left: 22px;">隐身</span></li>
+				<li><span style="margin-left: 22px;">离线</span></li>
 			</ul>
 			<div class="br"></div>
 			<ul>
-				<li>添加状态信息</li>
+				<li><span style="margin-left: 22px;">添加状态信息</span></li>
 			</ul>
 			<div class="br"></div>
 			<ul>
-				<li>关闭所有声音</li>
-				<li>关闭头像闪动</li>
+				<li><span style="margin-left: 22px;">关闭所有声音</span></li>
+				<li><span style="margin-left: 22px;">关闭头像闪动</span></li>
 			</ul>
 			<div class="br"></div>
 			<ul>
-				<li>锁定QQCtrl + Alt + L</li>
+				<li><span style="margin-left: 22px;">锁定QQCtrl + Alt + L</span></li>
 			</ul>
 			<div class="br"></div>
 			<ul>
-				<li>系统设置</li>
-				<li>我的资料</li>
-				<li>我的QQ中心</li>
+				<li><span style="margin-left: 22px;">系统设置</span></li>
+				<li><span style="margin-left: 22px;">我的资料</span></li>
+				<li><span style="margin-left: 22px;">我的QQ中心</span></li>
 			</ul>
+		</div>
+		<div id="user_info_list"></div>
+		<div id="history_list"></div>
+		<div id="haoyou_xiajiantou">
+			<ul>
+				<li class="touxiangxianshi">
+					<img id="touxiangxianshi" class="haoyou_zuo" src="img/touxiangxianshi.png" />
+					<span>头像显示</span>
+					<img id="touxiangxianshi_youjiantou" class="haoyou_you" src="img/touxiangxianshi_youjiantou.png" />
+				</li>
+				<li><span style="margin-left: 32px;">名称显示&nbsp;</span><img id="touxiangxianshi_youjiantou" class="haoyou_you" src="img/touxiangxianshi_youjiantou.png" /></li>
+				<li><span style="margin-left: 32px;">列表显示&nbsp;</span><img id="touxiangxianshi_youjiantou" class="haoyou_you" src="img/touxiangxianshi_youjiantou.png" /></li>
+			</ul>
+			<div class="br"></div>
+			<ul>
+				<li><span style="margin-left: 32px;">排列显示&nbsp;</span><img id="touxiangxianshi_youjiantou" class="haoyou_you" src="img/touxiangxianshi_youjiantou.png" /></li>
+				<li><span style="margin-left: 32px;">刷新好友列表</span></li>
+			</ul>
+			<div class="br"></div>
+			<ul>
+				<li><span style="margin-left: 32px;">显示在线联系人</span></li>
+			</ul>
+			<div class="br"></div>
+			<ul>
+				<li><span style="margin-left: 32px;">显示公众号分组</span></li>
+				<li><span style="margin-left: 32px;">显示黑名单</span></li>
+			</ul>
+		</div>
+		<div id="search_extend">
+		</div>
+
+		<div id="jiahaoyou">
+			<li class="jiahaoyou"><img id="jiahaoyouImg" src="img/jiahaoyou.png" /><span>添加好友</span></li>
+			<li class="chuangqunliao"><img id="chuangqunliaoImg" src="img/chuangqunliao.png" /><span>创建群聊</span></li>
 		</div>
 
 		<script src="js/jquery.1.11.1.min.js"></script>
