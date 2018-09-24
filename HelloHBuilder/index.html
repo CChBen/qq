@@ -72,8 +72,8 @@
 										</div>
 									</div>
 									<ul id="ulList1">
-										<li></li>
-										<li></li>
+										<li id="activeId"></li>
+										<li id="activeId"></li>
 									</ul>
 								</li>
 								<li>
@@ -227,7 +227,72 @@
 			<li class="chuangqunliao"><img id="chuangqunliaoImg" src="img/chuangqunliao.png" /><span>创建群聊</span></li>
 		</div>
 
-		<script src="js/jquery.1.11.1.min.js"></script>
+		<div id="chatRoom">
+			<div id="chatRoomTop">
+				<div id="topLeft">
+					<a id="topLeftA">Tschüss</a>
+					<img src="img/chatRoomZone.png" />
+				</div>
+				<div id="topRight">
+					<div class="chatRoomTop" title="关闭">×</div>
+					<div class="chatRoomTop" title="最小化">□</div>
+					<div class="chatRoomTop" title="最小化">-</div>
+					<div class="chatRoomTop" title="窗口设置"></div>
+				</div>
+			</div>
+			<div id="neirong">
+				<div id="neironglan1">
+					<div class="neironglan1" title="发起视频通话"></div>
+					<div class="neironglan1" title="发起语音通话"></div>
+				</div>
+				<div id="neironglan2">
+					<div class="neironglan1"></div>
+					<div class="neironglan1"></div>
+					<div class="neironglan1"></div>
+					<div class="neironglan1" title="发起群聊"></div>
+					<div class="neironglan1" title="发起视频通话"></div>
+					<div class="neironglan1" title="发起语音通话"></div>
+				</div>
+				<div id="neironglan_more" class="neironglan1" ></div>
+			</div>
+			<div id="fasong">
+				<div class="fasong1">
+					<div id="fasong1" title="选择表情"></div>
+					<div id="fasong1" title="选择热图"></div>
+					<div id="fasong1"></div>
+					<div id="fasong1"></div>
+					<div id="fasong1"></div>
+					<div id="fasong1" title="向好友发送抖动窗口"></div>
+					<div id="fasong1" title="发红包"></div>
+					<div id="fasong1" title="点歌"></div>
+				</div>
+				<div class="fasong2">
+					<div id="fasong2"></div>
+				</div>
+				<div id="fasong3">
+					<textarea class="fasong3"></textarea>
+				</div>
+				<div id="fasong4">
+					<div class="fasong4_2">
+						<div>
+							<div id="fasongxiajiantou"></div>
+						</div>
+						<div>
+							<span>发送(S)</span>
+							<span>|</span>
+						</div>
+					</div>
+					<div class="fasong4_1">
+						<span>关闭(C)</span>
+					</div>
+				</div>
+			</div>
+			<div id="qqxiu"></div>
+			<div id="neironglikai"></div>
+			<div class="fasongxiajiantou"></div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="js/qq1.js"></script>
 	</body>
 

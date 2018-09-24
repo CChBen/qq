@@ -7,6 +7,8 @@ var qunliaojiantou = 0;
 var labelType = 1; //1为联系人，2为动态，3为消息
 var type = 1;
 var jiahao = 0;
+var fasongxiajiantou = 0;
+var neironglan_more = 0;
 var liList = $("#ulList2").children("li");
 var historyList = $("#historyList").children("li");
 $("#title").on("click", function() {
@@ -22,9 +24,9 @@ $("#title").on("click", function() {
 	} else {
 		$("#jiaqun").show();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").show();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").show();
 	}
 });
@@ -47,9 +49,9 @@ $("#lable").on("click", function() {
 	} else {
 		$("#jiaqun").show();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").show();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").show();
 	}
 });
@@ -67,9 +69,9 @@ $("#people_info_type").on("click", function() {
 	} else {
 		$("#jiaqun").show();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").show();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").show();
 	}
 });
@@ -92,9 +94,9 @@ $(".botton").on("click", function() {
 	} else {
 		$("#jiaqun").show();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").show();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").show();
 	}
 });
@@ -172,19 +174,28 @@ $("#zaixian").hover(function() {
 }, function() {
 	$("#zaixianImg").attr('src', "img/zaixian.png");
 });
-
+$("#zaixian").on("click", function() {
+	$("#list").css("background-image", "url(img/zaixian.png)");
+	$("#statelist").hide();
+});
 $("#Q").hover(function() {
 	$("#QImg").attr('src', "img/Q_hover.png");
 }, function() {
 	$("#QImg").attr('src', "img/Q.png");
 });
-
+$("#Q").on("click", function() {
+	$("#list").css("background-image", "url(img/Q.png)");
+	$("#statelist").hide();
+});
 $("#likai").hover(function() {
 	$("#likaiImg").attr('src', "img/likai_hover.png");
 }, function() {
 	$("#likaiImg").attr('src', "img/likai.png");
 });
-
+$("#likai").on("click", function() {
+	$("#list").css("background-image", "url(img/likai.png)");
+	$("#statelist").hide();
+});
 $("#divlist1").hover(function() {
 	if(xianjiantou1 == 0) {
 		$("#youjiantou1").attr('src', "img/youjiantou_hover.png");
@@ -248,11 +259,45 @@ $("#ulList2>li").hover(function() {
 		opacity: 'hide'
 	});
 });
-//yaoxiugai
-$('#historyList>li').on("click", function(){
-	$(this).attr('src', "img/xiaoxi1_hover.png");
+
+$('#ulList1>li').on("click", function() {
+	var activeNumber = $('#activeId').index(this);
+	var number = $('#ulList1>li').index(this);
+	console.log("activeNumber" + activeNumber);
+	console.log("number" + number);
+	if(activeNumber == 0) {
+		$('.active').css("background-image", "url(img/xiaoxi4.png)");
+	} else if(activeNumber == -1) {
+		$('.active').css("background-image", "url(img/xiaoxi3.png)");
+	}
+	$(".active").removeClass("active");
+	$(this).addClass('active');
+	$(this).css("background-image", "url(img/xiaoxi" + String(Number(number) + 3) + "_hover.png)");
+
+});
+
+$('#ulList2>li').on("click", function() {
+	$('.activeClass').css("background-image", "url(img/xiaoxi5.png)");
+	$('.activeClass').removeClass("activeClass");
+	$(this).addClass('activeClass');
+	$(this).css("background-image", "url(img/xiaoxi5_hover.png)");
+});
+
+$('#ulList2>li').dblclick(function() {
 	console.log($(this));
 });
+
+$('#historyList>li').on("click", function() {
+	$('.activeHistory').css("background-image", "url(img/xiaoxi1.PNG)");
+	$('.activeHistory').removeClass("activeHistory");
+	$(this).addClass('activeHistory');
+	$(this).css("background-image", "url(img/xiaoxi1_hover.png)");
+});
+
+$('#historyList>li').dblclick(function() {
+	console.log($(this));
+});
+
 $("#historyList>li").hover(function() {
 	var number = $('#historyList>li').index(this);
 	$("#history_list").css("top", historyList[number].offsetTop + 240);
@@ -349,9 +394,9 @@ $(".search").on("click", function() {
 	} else {
 		$("#jiaqun").hide();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").hide();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").hide();
 	}
 	$("#cancel").show();
@@ -367,9 +412,9 @@ $("#contact").on("click", function() {
 	} else {
 		$("#jiaqun").show();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").show();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").show();
 	}
 	$("#cancel").hide();
@@ -385,9 +430,9 @@ $("#cancel").on("click", function() {
 	} else {
 		$("#jiaqun").show();
 	}
-	if(labelType==2){
+	if(labelType == 2) {
 		$("#dynamic_info").show();
-	}else if(labelType==3){
+	} else if(labelType == 3) {
 		$("#message_info").show();
 	}
 	$("#cancel").hide();
@@ -406,11 +451,114 @@ $(".chuangqunliao").hover(function() {
 });
 
 $("#jiahao").on("click", function() {
-	if(jiahao==0){
+	if(jiahao == 0) {
 		$("#jiahaoyou").show();
-		jiahao=1;
-	}else{
+		jiahao = 1;
+	} else {
 		$("#jiahaoyou").hide();
-		jiahao=0;
+		jiahao = 0;
 	}
+});
+
+$("#chatRoomTop").mousedown(function(e) {
+	//设置移动后的默认位置
+	var endx = 0;
+	var endy = 0;
+
+	//获取div的初始位置，要注意的是需要转整型，因为获取到值带px
+	var left = parseInt($("#chatRoom").css("left"));
+	var top = parseInt($("#chatRoom").css("top"));
+
+	//获取鼠标按下时的坐标，区别于下面的es.pageX,es.pageY
+	var downx = e.pageX;
+	var downy = e.pageY; //pageY的y要大写，必须大写！！
+
+	//    鼠标按下时给div挂事件
+	$("#chatRoomTop").bind("mousemove", function(es) {
+
+		//es.pageX,es.pageY:获取鼠标移动后的坐标
+		var endx = es.pageX - downx + left; //计算div的最终位置
+		var endy = es.pageY - downy + top;
+
+		//带上单位
+		$("#chatRoom").css("left", endx + "px").css("top", endy + "px")
+	});
+})
+
+$("#chatRoomTop").mouseup(function() {
+	//鼠标弹起时给div取消事件
+	$("#chatRoomTop").unbind("mousemove")
+})
+
+$("#title").mousedown(function(e) {
+	//设置移动后的默认位置
+	var endx = 0;
+	var endy = 0;
+
+	//获取div的初始位置，要注意的是需要转整型，因为获取到值带px
+	var left = parseInt($("#qq").css("left"));
+	var top = parseInt($("#qq").css("top"));
+
+	//获取鼠标按下时的坐标，区别于下面的es.pageX,es.pageY
+	var downx = e.pageX;
+	var downy = e.pageY; //pageY的y要大写，必须大写！！
+
+	//    鼠标按下时给div挂事件
+	$("#title").bind("mousemove", function(es) {
+
+		//es.pageX,es.pageY:获取鼠标移动后的坐标
+		var endx = es.pageX - downx + left; //计算div的最终位置
+		var endy = es.pageY - downy + top;
+
+		//带上单位
+		$("#qq").css("left", endx + "px").css("top", endy + "px")
+	});
+})
+
+$("#title").mouseup(function() {
+	//鼠标弹起时给div取消事件
+	$("#title").unbind("mousemove")
+})
+
+$("#fasong2").hover(function() {
+	$("#neironglikai").delay(500).fadeIn("fast");
+}, function() {
+	$("#neironglikai").delay(500).fadeOut("fast");
+});
+
+$("#fasongxiajiantou").hover(function() {
+	$("#fasongxiajiantou").attr('src', "img/fasongxiajiantou_hover.pngng");
+}, function() {
+	$("#fasongxiajiantou").attr('src', "img/fasongxiajiantou.png");
+});
+
+$("#fasongxiajiantou").on("click", function() {
+	if(fasongxiajiantou == 0) {
+		$('.fasongxiajiantou').show();
+		fasongxiajiantou = 1;
+	} else {
+		$('.fasongxiajiantou').hide();
+		fasongxiajiantou = 0;
+	}
+});
+
+$("#neironglan_more").click(function() {
+	if(neironglan_more == 0) {
+		$("#neironglan2").animate({
+			left: "-=100px"
+		}, "slow");
+		$("#neironglan_more").hide();
+		$("#neironglan_more").css("background-image", "url(img/neironglan8_hover.png)");
+		$("#neironglan_more").show();
+		neironglan_more = 1;
+	}else{
+		$("#neironglan2").animate({
+			left: "+=100px"
+		}, "slow");
+		$("#neironglan_more").hide();
+		$("#neironglan_more").css("background-image", "url(img/neironglan3_hover.png)");
+		$("#neironglan_more").show();
+		neironglan_more = 0;
+	}
+
 });

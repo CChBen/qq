@@ -164,21 +164,21 @@ body {
 }
 
 #list {
-	width: 10px;
-	height: 10px;
+	width: 13px;
+	height: 13px;
 	position: absolute;
 	top: 28px;
-	left: 28px;
+	left: 27px;
 	background-size: 100% 100%;
 	border-radius: 50%;
-	background-color: rgb(9, 241, 117);
-	/*background-image: url(../img/zaixian.png);*/
-	
+	cursor: default;
+	/*	background-color: rgb(9, 241, 117);*/
+	background-image: url(../img/zaixian.png);
 }
 
 #list:hover {
-	background-color: rgb(8, 217, 105);
-	/*background-image: url(../img/zaixian_hover.png);*/
+	/*	background-color: rgb(8, 217, 105);*/
+	background-image: url(../img/zaixian_hover.png);
 }
 
 #userinfo {
@@ -262,7 +262,7 @@ body {
 	width: 25%;
 	height: 100%;
 	font-size: 10px;
-	color: rgb(78,78,79);
+	color: rgb(78, 78, 79);
 	line-height: 25px;
 	text-align: center;
 	position: absolute;
@@ -335,7 +335,7 @@ body {
 	overflow: auto;
 }
 
-#jiaqunImg{
+#jiaqunImg {
 	margin-bottom: 5px;
 	height: 500px;
 	width: 100%;
@@ -591,16 +591,15 @@ body {
 	height: 35px;
 	line-height: 40px;
 	cursor: pointer;
-	margin-top: 3px;;
+	margin-top: 3px;
+	;
 	background-size: 100% 100%;
 	background-image: url(../img/xiaoxi1.PNG);
 }
 
-//yaoxiugai
-
-/*#message_info ul li:hover {
+#message_info ul li:hover {
 	background-image: url(../img/xiaoxi1_hover.png);
-}*/
+}
 
 #people_info {
 	overflow: auto;
@@ -626,7 +625,7 @@ body {
 	cursor: default;
 	margin-left: 10px;
 	padding-left: 10px;
-	background: rgb(251,251,251);
+	background: rgb(251, 251, 251);
 }
 
 #qunliao {
@@ -655,11 +654,11 @@ body {
 	line-height: 15px;
 	cursor: default;
 	right: 0;
-	color: rgb(237,237,237);
-	background: rgb(255,255,255);
+	color: rgb(237, 237, 237);
+	background: rgb(255, 255, 255);
 }
 
-#friends img{
+#friends img {
 	width: 9px;
 	height: 9px;
 	vertical-align: middle;
@@ -667,7 +666,7 @@ body {
 	display: none;
 }
 
-#qunliao img{
+#qunliao img {
 	width: 9px;
 	height: 9px;
 	vertical-align: middle;
@@ -675,7 +674,7 @@ body {
 	display: none;
 }
 
-#addFriends img{
+#addFriends img {
 	width: 12px;
 	height: 12px;
 	vertical-align: middle;
@@ -683,11 +682,13 @@ body {
 	/*display: none;*/
 }
 
+
 /*#people_info_type div:nth-child(1) {
 	background-size: 100% 100%;
 	left: 15px;
 	background-image: url(../img/friends.png);
 }*/
+
 
 /*#people_info_type div:nth-child(2) {
 	background-size: 100% 100%;
@@ -886,7 +887,7 @@ body {
 
 #statelist ul li:hover {
 	cursor: pointer;
-	background-color: rgb(238,238,238);
+	background-color: rgb(238, 238, 238);
 }
 
 .br {
@@ -987,6 +988,7 @@ body {
 	background-image: url(../img/xiaoxi_hover.png);
 }
 
+
 /*.operation1:nth-child(1) {
 	float: left;
 	background-image: url(../img/qqhuiyuan.png);
@@ -1045,7 +1047,7 @@ body {
 	background-image: url(../img/qiehuangzhanghao_hover.png);
 }*/
 
-#user_info_list{
+#user_info_list {
 	width: 200px;
 	height: 105px;
 	position: absolute;
@@ -1058,7 +1060,7 @@ body {
 	background-image: url(../img/user.png);
 }
 
-#history_list{
+#history_list {
 	width: 180px;
 	height: 50px;
 	position: absolute;
@@ -1071,7 +1073,7 @@ body {
 	background-image: url(../img/xiaoxi1_extend.png);
 }
 
-#haoyou_xiajiantou{
+#haoyou_xiajiantou {
 	width: 120px;
 	height: 195px;
 	position: absolute;
@@ -1087,7 +1089,7 @@ body {
 	background-size: 100% 100%;
 }
 
-#haoyou_xiajiantou ul li{
+#haoyou_xiajiantou ul li {
 	height: 14px;
 	line-height: 10px;
 	padding-top: 5px;
@@ -1096,25 +1098,24 @@ body {
 
 #haoyou_xiajiantou ul li:hover {
 	cursor: default;
-	background-color: rgb(238,238,238);
+	background-color: rgb(238, 238, 238);
 }
 
-
-.haoyou_zuo{
+.haoyou_zuo {
 	width: 20px;
 	height: 12px;
 	vertical-align: middle;
 	margin-right: 10px;
 }
 
-.haoyou_you{
+.haoyou_you {
 	width: 20px;
 	height: 12px;
 	vertical-align: middle;
 	margin-left: 15px;
 }
 
-#search_extend{
+#search_extend {
 	width: 184px;
 	height: 125px;
 	position: absolute;
@@ -1129,7 +1130,7 @@ body {
 	background-image: url(../img/sousuolan.png);
 }
 
-#jiahaoyou{
+#jiahaoyou {
 	width: 90px;
 	height: 52px;
 	position: absolute;
@@ -1144,17 +1145,17 @@ body {
 	background-size: 100% 100%;
 }
 
-#jiahaoyou img{
+#jiahaoyou img {
 	width: 16px;
 	height: 14px;
 	vertical-align: middle;
 }
 
-#jiahaoyou span{
+#jiahaoyou span {
 	margin-left: 6px;
 }
 
-#jiahaoyou li{
+#jiahaoyou li {
 	height: 14px;
 	margin-top: 5px;
 	padding-top: 5px;
@@ -1163,5 +1164,435 @@ body {
 
 #jiahaoyou li:hover {
 	cursor: default;
-	background-color: rgb(238,238,238);
+	background-color: rgb(238, 238, 238);
+}
+
+#chatRoom {
+	width: 350px;
+	height: 290px;
+	position: relative;
+	/*margin: auto;
+	top: 65px;
+	left: 90px;*/
+	cursor: default;
+	font-size: 9px;
+	background-color: white;
+	border: #CCCCCC solid 0.5px;
+	/*display: none;*/
+	background-size: 100% 100%;
+}
+
+#chatRoomTop {
+	width: 100%;
+	height: 8%;
+	line-height: 20px;
+	text-align: center;
+	cursor: default;
+	border: rgb(242, 242, 242) solid 0.1px;
+	background-color: rgb(242, 242, 242);
+}
+
+#topRight {
+	line-height: 20px;
+	width: 30%;
+	font-size: 13px;
+	float: right;
+	margin: auto;
+}
+
+#topLeft {
+	width: 30%;
+	float: left;
+	padding-left: 120px;
+	font-weight: 400;
+	font-size: 10px;
+	text-align: center;
+	margin: auto;
+	cursor: pointer;
+}
+
+#topLeftA:hover {
+	text-decoration: underline;
+}
+
+.chatRoomTop {
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+
+#chatRoomTop img {
+	height: 17px;
+	width: 17px;
+	vertical-align: middle;
+}
+
+#topRight div:hover {
+	background-color: rgb(228, 226, 226);
+}
+
+#topRight div:nth-child(1):hover {
+	background-color: rgb(255, 84, 57);
+}
+
+#topRight div:nth-child(4) {
+	background-size: 100% 100%;
+	background-image: url(../img/chatRoomXiajiantou.png);
+}
+
+#topRight div:nth-child(4):hover {
+	background-size: 100% 100%;
+	background-image: url(../img/chatRoomXiajiantou_hover.png);
+}
+
+#neirong {
+	height: 67%;
+	width: 76%;
+	background: white;
+	position: absolute;
+	border-bottom: #CCCCCC solid 0.5px;
+	top: 8%;
+	left: 0;
+}
+
+#fasong {
+	height: 25%;
+	width: 76%;
+	background: white;
+	position: absolute;
+	border-top: #CCCCCC solid 0.5px;
+	border-bottom: #CCCCCC solid 0.5px;
+	top: 75%;
+	left: 0;
+}
+
+#fasong1 {
+	height: 100%;
+	width: 9%;
+	float: left;
+	vertical-align: middle;
+}
+
+#fasong2 {
+	height: 100%;
+	width: 15px;
+	float: right;
+	vertical-align: middle;
+}
+
+#fasong3 {
+	height: 55%;
+	width: 100%;
+	background: white;
+	float: left;
+	vertical-align: middle;
+}
+
+#fasong4 {
+	height: 20%;
+	width: 100%;
+	background: white;
+	float: left;
+	vertical-align: middle;
+}
+
+.fasong3 {
+	height: 100%;
+	width: 100%;
+	border: none;
+	resize: none;
+	outline: none;
+	font-size: 7px;
+	color: black;
+}
+
+.fasong4_1 {
+	height: 100%;
+	width: 15%;
+	font-size: 7px;
+	color: black;
+	border: rgb(205, 207, 208) solid 0.5px;
+	background-color: rgb(255, 255, 255);
+	margin-right: 10px;
+	float: right;
+	text-align: center;
+}
+
+.fasong4_1:hover {
+	background-color: rgb(239, 239, 240);
+}
+
+.fasong4_2 {
+	height: 100%;
+	width: 19%;
+	font-size: 7px;
+	color: black;
+	border: rgb(205, 207, 208) solid 0.5px;
+	background-color: rgb(204, 204, 204);
+	margin-right: 10px;
+	float: right;
+	text-align: center;
+}
+
+.fasong4_2 div {
+	height: 100%;
+}
+
+.fasong4_2 div:nth-child(1):hover {
+	background-color: rgb(208, 208, 209);
+}
+
+.fasong4_2 div:nth-child(1) {
+	height: 90%;
+	width: 14px;
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/fasongxiajiantou.png);
+	float: right;
+}
+
+.fasong4_2 span:nth-child(2) {
+	color: rgb(220, 220, 220);
+}
+
+.fasong1 {
+	line-height: 20px;
+	margin: auto;
+	float: left;
+	width: 70%;
+	height: 15px;
+}
+
+.fasong2 {
+	float: right;
+	width: 20%;
+	height: 15px;
+}
+
+#fasong1:hover {
+	background-color: rgb(228, 226, 226);
+}
+
+#fasong2:hover {
+	background-color: rgb(228, 226, 226);
+}
+
+.fasong1 div:nth-child(1) {
+	background-size: 100% 100%;
+	background-image: url(../img/neirongTubiao1.png);
+}
+
+.fasong1 div:nth-child(1):hover {
+	background-size: 100% 100%;
+	background-image: url(../img/neirongTubiao1_hover.png);
+}
+
+.fasong2 div:nth-child(1) {
+	background-size: 100% 100%;
+	background-image: url(../img/neirongTubiao10.png);
+}
+
+.fasong2 div:nth-child(1):hover {
+	background-size: 100% 100%;
+	background-image: url(../img/neirongTubiao10_hover.png);
+}
+
+#qqxiu {
+	height: 92%;
+	width: 24%;
+	background: white;
+	position: absolute;
+	border-left: #CCCCCC solid 0.5px;
+	top: 8%;
+	right: 0;
+	background-size: 100% 100%;
+	background-image: url(../img/QQxiu.png);
+}
+
+#neironglikai {
+	height: 30%;
+	width: 25%;
+	position: absolute;
+	border: #CCCCCC solid 0.5px;
+	top: 45%;
+	right: 18%;
+	display: none;
+	background-color: white;
+	background-size: 100% 100%;
+	background-image: url(../img/neirongTubiao10_extend.png);
+}
+
+.fasongxiajiantou {
+	height: 15%;
+	width: 35%;
+	position: absolute;
+	border: #CCCCCC solid 0.5px;
+	top: 99.9%;
+	left: 69%;
+	display: none;
+	background-color: white;
+	background-size: 100% 100%;
+	opacity: 0.9;
+	background-image: url(../img/fasong_extend.png);
+}
+
+#neironglan1 {
+	height: 13%;
+	width: 30%;
+	position: absolute;
+	top: 3%;
+	left: 70%;
+	display: none;
+	background-color: white;
+}
+
+.neironglan1 {
+	height: 23px;
+	width: 23px;
+	margin-right: 1%;
+}
+
+#neironglan_more{
+	position: absolute;
+	top: 3%;
+	right: 0.5%;
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan3.png);
+	float: right;
+}
+
+#neironglan_more:hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan3_hover.png);
+	float: right;
+}
+
+
+#neironglan1 div:nth-child(2) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2.png);
+	float: right;
+}
+
+#neironglan1 div:nth-child(2):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2_hover.png);
+	float: right;
+}
+
+#neironglan1 div:nth-child(1) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan3.png);
+	float: right;
+}
+
+#neironglan1 div:nth-child(1):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan3_hover.png);
+	float: right;
+}
+
+#neironglan2 {
+	height: 13%;
+	width: 70%;
+	position: absolute;
+	top: 3%;
+	left: 58%;
+/*	display: none;*/
+}
+
+.neironglan2 {
+	height: 23px;
+	width: 23px;
+	margin-right: 1%;
+}
+
+#neironglan2 div:nth-child(6) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan1.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(6):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan1_hover.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(5) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(5):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2_hover.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(4) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(4):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2_hover.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(3) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan1.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(3):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan1_hover.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(2) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(2):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan2_hover.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(1) {
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan1.png);
+	float: right;
+}
+
+#neironglan2 div:nth-child(1):hover{
+	vertical-align: middle;
+	background-size: 100% 100%;
+	background-image: url(../img/neironglan1_hover.png);
+	float: right;
 }
