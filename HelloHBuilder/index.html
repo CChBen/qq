@@ -33,7 +33,7 @@
 				<div id="userinfo" class="info">
 					<span>Tschüss</span>
 					<div id="signature">
-						<input value="编辑个性签名" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value='编辑个性签名';">
+						<input class="signature" value="编辑个性签名">
 					</div>
 				</div>
 				<div id="weather" class="info">
@@ -234,26 +234,85 @@
 					<img src="img/chatRoomZone.png" />
 				</div>
 				<div id="topRight">
-					<div class="chatRoomTop" title="关闭">×</div>
+					<div id="chatRoomEsc" class="chatRoomTop" title="关闭">×</div>
 					<div class="chatRoomTop" title="最小化">□</div>
 					<div class="chatRoomTop" title="最小化">-</div>
 					<div class="chatRoomTop" title="窗口设置"></div>
 				</div>
 			</div>
 			<div id="neirong">
-				<div id="neironglan1">
-					<div class="neironglan1" title="发起视频通话"></div>
-					<div class="neironglan1" title="发起语音通话"></div>
+				<div id="content">
+					<!--<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>
+					<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>
+					<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>
+					<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>
+					<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>
+					<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>
+					<div class="content">
+						<div id="time">
+							<span>14:23:36</span>
+						</div>
+						<span>是是是是</span>
+						<span></span>
+						<img id="contentImg" src="img/contentImg.png" />
+					</div>-->
 				</div>
-				<div id="neironglan2">
-					<div class="neironglan1"></div>
-					<div class="neironglan1"></div>
-					<div class="neironglan1"></div>
-					<div class="neironglan1" title="发起群聊"></div>
-					<div class="neironglan1" title="发起视频通话"></div>
-					<div class="neironglan1" title="发起语音通话"></div>
+				<div class="neirong">
+					<div id="neironglan2">
+						<div id="neironglan6" class="neironglan1"></div>
+						<div class="neironglan1"></div>
+						<div class="neironglan1"></div>
+						<div class="neironglan1" title="发起群聊"></div>
+						<div class="neironglan1" title="发起视频通话"></div>
+						<div class="neironglan1" title="发起语音通话"></div>
+					</div>
+					<div class="neironglan_more">
+						<div id="neironglan_more" class="neironglan1" title="收起"></div>
+					</div>
+					<div class="neironglan6"></div>
 				</div>
-				<div id="neironglan_more" class="neironglan1" ></div>
 			</div>
 			<div id="fasong">
 				<div class="fasong1">
@@ -277,7 +336,7 @@
 						<div>
 							<div id="fasongxiajiantou"></div>
 						</div>
-						<div>
+						<div id="send">
 							<span>发送(S)</span>
 							<span>|</span>
 						</div>
@@ -291,7 +350,7 @@
 			<div id="neironglikai"></div>
 			<div class="fasongxiajiantou"></div>
 		</div>
-
+		<div id="youjian"></div>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="js/qq1.js"></script>
 	</body>
